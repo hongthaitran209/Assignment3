@@ -1,0 +1,428 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+p {
+  margin-bottom: 0;
+}
+.bg-grey {
+  background: #f7f7f7;
+}
+/* Thiết lập width cho các phần từ section và căn giữa với margin: auto */
+/* section {
+  width: 1170px;
+  margin: auto;
+} */
+
+/* Thiết lập width cho các class .container và căn giữa với margin: auto */
+/* .container {
+  width: 80%;
+  margin: auto;
+} */
+
+#nav-bar {
+  text-align: center;
+  width: 100%;
+}
+
+#banner {
+  position: relative;
+  color: #fff;
+  line-height: 0;
+  width: 100%;
+}
+
+/* Định dạng position: absolute cho phần chữ của banner để căn chỉnh phần chữ nằm ở vị trí mong muốn trong banner */
+.banner-text {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+
+  /*Cách để đưa phần chữ vào giữa banner*/
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  line-height: 1;
+  font-size: 30px;
+}
+
+.banner-text span {
+  font-size: 14px;
+}
+
+.nav-bar-container {
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+}
+
+/*Vẽ đường viền cho class .nav-bar-item là class con cuối cùng của class cha .nav-bar-container*/
+.nav-bar-container .nav-bar-item:last-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar-item {
+  color: grey;
+  padding: 10px 35px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.nav-bar-item.center {
+  width: 20%;
+}
+
+/*Căn chỉnh avatar vào giữa như thiết kế và vẽ đường viền tròn bên ngoài avatar với border-radius: 50%;*/
+.avatar {
+  width: 150px;
+  height: 150px;
+  border: 10px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: -150%;
+}
+
+.nav-bar-item h1 {
+  font-size: 22px;
+}
+
+.nav-bar-item span {
+  font-size: 12px;
+}
+.nav-bar-item a:link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: grey;
+  font-size: 12px;
+}
+
+.nav-bar-icon {
+  color: #199cbd;
+}
+
+.about-container {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  background-color: #f7f7f7;
+}
+
+#target,
+#personal-info {
+  padding: 60px 20px 40px 60px;
+  line-height: 1.6;
+}
+
+#personal-info {
+  background-color: #f0f0f0;
+}
+
+#target h1,
+#personal-info h1 {
+  margin-bottom: 30px;
+}
+
+#target p {
+  color: grey;
+}
+
+.info {
+  color: grey;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.info span {
+  font-weight: bold;
+}
+
+.info-icon a:link {
+  color: #199cbd;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/*Thiết lập CSS Grid cho phần job-info với 3 cột và 2 dòng.*/
+.job-info-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  margin: 40px auto;
+  gap: 30px;
+}
+
+.job-info-item {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 90px auto;
+  padding: 20px;
+  border: 1px solid black;
+  align-items: center;
+  color: grey;
+}
+
+.job-info-item h1 {
+  font-size: 22px;
+}
+
+.job-icon {
+  font-size: 30px;
+  padding: 20px 10px;
+}
+
+.job-description {
+  /*Định dạng số cột của phần mô tả công việc là 1/ -1 để trong trường hợp nếu chúng ta thêm cột vào khu vực
+  job-info-item thì tự động phần mô tả công việc này vẫn sẽ biến thành một cột mà không cần phải sửa lại code*/
+  grid-column: 1/ -1;
+  align-self: start;
+}
+
+.job-description h2 {
+  font-size: 14px;
+}
+
+.job-description ul li span {
+  background-color: #199cbd;
+  color: white;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.job-description ul li {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-size: 12px;
+}
+
+.job-description div {
+  margin-bottom: 15px;
+}
+
+.hobby-row {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.hobby-row p {
+  font-size: 12px;
+}
+
+.hobby-row .hobby-icon {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #199cbd;
+  border-radius: 50%;
+  padding-top: 10px;
+  margin-bottom: 15px;
+  color: #199cbd;
+}
+
+.skills p {
+  font-size: 18px;
+}
+
+.skills span {
+  width: 40px;
+  height: 5px;
+  background-color: grey;
+  display: inline-block;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.skills .checked {
+  background-color: #199cbd;
+}
+
+.certificate-grid {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 30px;
+  padding: 30px 0px;
+}
+
+.grid-row {
+  display: flex;
+  padding-bottom: 20px;
+  gap: 20px;
+}
+
+.certificate-grid .grid-row:first-child {
+  border-bottom: 1px solid #d6c08d;
+}
+
+.certificate-info {
+  display: flex;
+  width: 50%;
+}
+
+.certificate-info img {
+  width: 50%;
+}
+
+.grid-row .certificate-info:first-child {
+  border-right: 1px solid #d6c08d;
+}
+
+.grid-row .certificate-info:last-child {
+  border-right: none;
+}
+
+.certificate-container {
+  padding-top: 50px;
+}
+
+.certificate-text {
+  color: grey;
+  margin-left: 20px;
+  line-height: 1.6;
+}
+
+.certificate-text h2 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  color: grey;
+  padding: 30px 0px;
+}
+
+.project-item img {
+  width: 100%;
+}
+
+.project-name {
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 1px solid grey;
+}
+
+.project-job {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  font-size: 14px;
+}
+
+.project-job span {
+  background-color: #199cbd;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.project-description {
+  border: 1px solid grey;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.project-description td {
+  padding: 10px;
+  border-bottom: 1px solid grey;
+  vertical-align: top;
+}
+
+.footer-container {
+  padding: 40px;
+  color: grey;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-container a:link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  color: grey;
+}
+
+.footer-icon {
+  width: 10%;
+  color: #199cbd;
+}
+
+/* DIGITAL-CV page */
+.digital-main {
+  height: 100%;
+}
+.digital-main h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.digital-main p {
+  font-size: 12px;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.timeline {
+  grid-row: 1 / -1;
+  grid-column: 3/ 4;
+}
+
+.heading {
+  font-size: 30px;
+  color: blue;
+  border-bottom: 1px solid grey;
+  padding-bottom: 5px;
+}
+
+.goal-item,
+.team-item,
+.timeline-item,
+.scope-content,
+.primary-item {
+  gap: 20px;
+}
+
+.goal-item {
+  border-bottom: 1px solid grey;
+}
+
+.timeline-text {
+  border-bottom: 1px dashed grey;
+}
+
+.in h4,
+.out h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.timeline-order {
+  font-size: 16px;
+  color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: purple;
+  padding: 5px;
+}

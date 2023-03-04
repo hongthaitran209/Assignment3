@@ -1,0 +1,46 @@
+@media (max-width: 576px) {
+  .nav-bar-container {
+    display: block;
+    text-align: start;
+  }
+  .nav-bar-item {
+    display: block;
+    padding: 7px;
+  }
+  .nav-bar-item.center {
+    display: none;
+  }
+
+  .job-info-container {
+    grid-template-columns: 1fr;
+    margin: 30px auto;
+  }
+
+  .certificate-grid {
+    display: block;
+    padding: 30px 0px;
+  }
+
+  .certificate-info {
+    width: 100%;
+    padding: 20px 0px;
+    border-bottom: 1px solid #d6c08d;
+  }
+
+  .grid-row {
+    display: block;
+    padding: 0;
+  }
+
+  .certificate-grid .grid-row:first-child {
+    border-bottom: none;
+  }
+
+  .grid-row .certificate-info:first-child {
+    border-right: none;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+}

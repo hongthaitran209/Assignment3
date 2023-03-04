@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/laptop.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <title>Assignment 03</title>
+  </head>
+  <body>
+    <section id="banner">
+      <img
+        src="images/banner.jpg"
+        alt="Banner image"
+        style="width: 100%; height: auto"
+      />
+      <div class="banner-text">
+        <h1>Trần Hồng Thái</h1>
+        <span>Manufacturing Engineer</span>
+      </div>
+    </section>
+
+    <section id="nav-bar">
+      <nav class="nav-bar-container">
+        <a href="#" class="nav-bar-item"
+          ><i class="icon-user nav-bar-icon"></i>Thông tin</a
+        >
+
+        <a href="#" class="nav-bar-item"
+          ><i class="icon-doc-text-inv nav-bar-icon"></i>Lý lịch</a
+        >
+        <!-- Phần <div> này để tạo khoảng trống ở giữa thanh nav bar và đặt ảnh avatar ở vị trí đó như thiết kế -->
+        <div class="nav-bar-item center"></div>
+
+        <img src="images/avatar.jpg" class="avatar" />
+
+        <a href="#" class="nav-bar-item"
+          ><i class="icon-mail-alt nav-bar-icon"></i>Chứng chỉ</a
+        >
+
+        <a href="#" class="nav-bar-item"
+          ><i class="icon-star-1 nav-bar-icon"></i>Dự Án</a
+        >
+      </nav>
+    </section>
+
+    <section id="about" class="container">
+      <!-- Dùng bootstrap .row để tạo Grid -->
+      <div class="about-container row">
+        <!-- Dùng bootstrap .col-sm để tự động đưa các cột chồng thành 1 cột cho kích thước màn hình mobile -->
+        <div id="target" class="col-sm">
+          <h1 class="section-title">Mục tiêu nghề nghiệp</h1>
+          <p>
+            Với chuyên ngành Kinh Doanh Thương Mại tại Đại học Kinh tế TPHCM,
+            sau khi tốt nghiệp, em mang trong mình một khát vọng được làm trong
+            một công ty đa quốc gia, luôn đón nhận những thử thách mới và cao
+            nhất để luôn làm mới mình và tiến xa hơn trong tương lại.
+          </p>
+        </div>
+        <div id="personal-info" class="col-sm">
+          <h1 class="section-title">Thông tin cá nhân</h1>
+          <ul class="mt-40 info">
+            <li><span>Giới tính</span> : Nam</li>
+            <li><span>Ngày sinh</span> : 20/09/1995</li>
+            <li><span>Điện thoại</span> : (+84) 0373070005</li>
+            <li><span>Email</span> : thaifx21021@funix.edu.vn</li>
+            <li><span>Địa chỉ</span> : Thống Nhất, Đồng Nai</li>
+            <li><span>Website</span> : https://abc.tech</li>
+          </ul>
+          <div class="info-icon">
+            <a href="#"><i class="icon-twitter"></i></a>
+            <a href="#"><i class="icon-facebook"></i></a>
+            <a href="#"><i class="icon-gplus"></i></a>
+            <a href="#"><i class="icon-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="job-info">
+      <div class="container job-info-container">
+        <div class="job-info-item">
+          <h1>Kinh nghiệm</h1>
+          <i class="ic-toolbox job-icon"></i>
+          <div class="job-description">
+            <ul>
+              <li>
+                <h2>Manufacturing Engineer - Công ty TNHH Longwell</h2>
+
+                <div>
+                  <i>05/2022 - <span>Hiện tại</span></i>
+                </div>
+
+                <p>
+                  - Theo dõi tiến trình làm mẫu và làm báo cáo cho khách hàng.
+                </p>
+                <p>- Hỗ trợ chuyền sản xuất khi giày có vấn đề về kỹ thuật.</p>
+                <p>
+                  - Tìm các giải pháp khi giày có vấn đề trong quá trình làm
+                  mẫu.
+                </p>
+              </li>
+              <li>
+                <h2>Merchandiser - Công ty TNHH InJ</h2>
+                <div><i>08/2020-05/2022</i></div>
+
+                <p>
+                  - Theo dõi tiến trình làm mẫu túi xách và làm báo cáo cho
+                  khách hàng.
+                </p>
+                <p>- Tìm và đặt mua các nguyên vật liệu để túi xách mẫu</p>
+                <p>- Đóng gói và xuất túi mẫu đúng thời hạn cho khách hàng.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="job-info-item">
+          <h1>Học vấn</h1>
+          <i class="ic-pencil job-icon"></i>
+          <div class="job-description">
+            <ul>
+              <li>
+                <h2>Đại học Kinh tế TPHCM</h2>
+
+                <div>
+                  <i>09/2013-07/2017</i>
+                </div>
+
+                <p>Chuyên ngành: Kinh doanh thương mại</p>
+                <p>GPA: 7.3 / 10</p>
+              </li>
+              <li>
+                <h2>THPT Thống Nhất B</h2>
+                <div><i>08/2011-05/2013</i></div>
+
+                <p>Tốt nghiệp loại giỏi</p>
+                <p>GPA: 9 / 10</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="job-info-item">
+          <h1>Hoạt động</h1>
+          <i class="ic-toolbox job-icon"></i>
+          <div class="job-description">
+            <ul>
+              <li>
+                <h2>Đại học Kinh tế TPHCM</h2>
+
+                <div>
+                  <i>08/2015-09/2015</i>
+                </div>
+
+                <p>Giải nhì hội diễn văn nghệ cấp trường</p>
+              </li>
+              <li>
+                <h2>Giáo xứ Pleibong - Gia Lai</h2>
+                <div><i>05/2015-08/2015</i></div>
+                <p>Hỗ trợ dạy thêm cho trẻ em dân tộc Bahna</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="job-info-item">
+          <h1>Sở thích</h1>
+          <i class="ic-telescope job-icon"></i>
+          <div class="job-description">
+            <div class="hobby-row">
+              <div>
+                <i class="ic-megaphone hobby-icon"></i>
+                <p>Guitar</p>
+              </div>
+              <div>
+                <i class="ic-strategy hobby-icon"></i>
+                <p>Cầu lông</p>
+              </div>
+              <div>
+                <i class="ic-hotairballoon hobby-icon"></i>
+                <p>Du lịch</p>
+              </div>
+              <div>
+                <i class="ic-basket hobby-icon"></i>
+                <p>Đọc sách</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="job-info-item">
+          <h1>Ngôn ngữ</h1>
+          <i class="ic-mic job-icon"></i>
+          <div class="job-description">
+            <div class="skills">
+              <p><b>English</b></p>
+              <span class="checked"></span><span class="checked"></span
+              ><span class="checked"></span>
+            </div>
+          </div>
+        </div>
+        <div class="job-info-item">
+          <h1>Kỹ năng</h1>
+          <i class="ic-tools-2 job-icon"></i>
+          <div class="job-description">
+            <div class="skills">
+              <p><b>Communication</b></p>
+              <!--Thẻ <span> nào có class="checked" thì sẽ biến thành màu xanh, thể hiện mức độ chuyên môn của kỹ năng đó-->
+              <span class="checked"></span><span class="checked"></span
+              ><span class="checked"></span>
+            </div>
+
+            <div class="skills">
+              <p><b>Office</b></p>
+              <span class="checked"></span><span class="checked"></span
+              ><span></span>
+            </div>
+          </div>
+          <div class="job-description">
+            <div class="skills">
+              <p><b>Problem solving</b></p>
+              <span class="checked"></span><span class="checked"></span
+              ><span class="checked"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="certificate" class="bg-grey">
+      <div class="container certificate-container">
+        <h1 class="section-title">Chứng chỉ - Giải thưởng</h1>
+        <div class="certificate-grid">
+          <div class="grid-row">
+            <div class="certificate-info">
+              <img src="images/Cert_DBI.png" />
+              <div class="certificate-text">
+                <h2>IELTS</h2>
+                <p>2017</p>
+                <p>Score: 6.5</p>
+              </div>
+            </div>
+            <div class="certificate-info">
+              <img src="images/Cert_DBI.png" />
+              <div class="certificate-text">
+                <h2>TOEIC</h2>
+                <p>2017</p>
+                <p>Score: 680</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-row">
+            <div class="certificate-info">
+              <img src="images/Cert_DBI.png" />
+              <div class="certificate-text">
+                <h2>Tin học văn phòng</h2>
+                <p>2016</p>
+                <p>Xếp loại: xuất sắc</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project">
+      <div class="container">
+        <h1 class="section-title">Dự án</h1>
+        <div class="project-list">
+          <div class="project-item">
+            <a href="digital-CV.html"><img src="images/project_1.png" /></a>
+            <p class="project-name">
+              PHÁT TRIỂN NHÓM HƯỚNG NGHIỆP CHO SINH VIÊN
+            </p>
+            <div class="project-job">
+              <span>2015</span>
+              <p><i class="icon-user-1"></i>GKSN</p>
+              <p><i class="icon-lamp"></i>Phó nhóm</p>
+            </div>
+            <table class="project-description">
+              <tr>
+                <td>Mô tả</td>
+                <td>
+                  Bằng trải nghiệm và kiến thức có được hỗ trợ các bạn sinh viên
+                  chọn được ngành phù hợp với khả năng và sở thích
+                </td>
+              </tr>
+              <tr>
+                <td>Nhiệm vụ</td>
+                <td>
+                  Lên kế hoạch và tổ chức các chương trình hướng nghiệp tại các
+                  trường cấp ba
+                </td>
+              </tr>
+              <tr>
+                <td>Thành tựu</td>
+                <td>Kết nối được nhóm với các trường đại học lớn ở TPHCM</td>
+              </tr>
+            </table>
+          </div>
+          <div class="project-item">
+            <a href="digital-CV.html"><img src="images/project_2.png" /></a>
+            <p class="project-name">
+              PHÁT TRIỂN NHÓM CẦU LÔNG SINH VIÊN ĐH KINH TẾ TPHCM
+            </p>
+            <div class="project-job">
+              <span>2014</span>
+              <p><i class="icon-user-1"></i>ĐH Kinh tế</p>
+              <p><i class="icon-lamp"></i>Trưởng nhóm</p>
+            </div>
+            <table class="project-description">
+              <tr>
+                <td>Mô tả</td>
+                <td>
+                  Với kinh nghiệm thi đấu và khả năng chơi cầu lông của mình để
+                  dẫn dắt và kêu gọi các bạn sinh viên trong trường tham gia
+                  chơi thể thao, đặc biệt là cầu lông.
+                </td>
+              </tr>
+              <tr>
+                <td>Nhiệm vụ</td>
+                <td>
+                  Lên kế hoạch tập luyện cho các thành viên và dẫn dắt các bạn
+                  đi thi đấu giải trong khu vực TPHCM.
+                </td>
+              </tr>
+              <tr>
+                <td>Thành tựu</td>
+                <td>Giải nhì đồng đội các CLB đại học khu vực TPHCM</td>
+              </tr>
+            </table>
+          </div>
+          <div class="project-item">
+            <a href="digital-CV.html"><img src="images/project_3.png" /></a>
+            <p class="project-name">Nhóm sinh viên nghiên cứu thuế</p>
+            <div class="project-job">
+              <span>2016</span>
+              <p><i class="icon-user-1"></i>ĐH Kinh tế</p>
+              <p><i class="icon-lamp"></i>Phó ban sự kiện</p>
+            </div>
+            <table class="project-description">
+              <tr>
+                <td>Mô tả</td>
+                <td>
+                  Tạo sự kết nối giữa các thành viên trong và ngoài nhóm. Xây
+                  dựng các kế hoạch giao lưu học hỏi giữa các CLB/ Đội/ Nhóm
+                  trong trường
+                </td>
+              </tr>
+              <tr>
+                <td>Nhiệm vụ</td>
+                <td>
+                  Lên kế hoạch tổ chức các sự kiện cho nhóm như cuộc thi học
+                  thuật, sinh nhật nhóm, team building,...
+                </td>
+              </tr>
+              <tr>
+                <td>Thành tựu</td>
+                <td>Tổ chức thành công cuộc thi học thuật tầm cỡ khu vực.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer" class="bg-grey">
+      <div class="container footer-container">
+        <!--Bọc cả icon và phần chữ vào trong thẻ <a> để biến cả icon và phần chữ thành link.
+          Nếu không, khi rê chuột vào phần icon thì sẽ không biến thành link mà chỉ có phần chữ biến thành link-->
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi bi-facebook footer-icon"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+            />
+          </svg>
+          Facebook</a
+        >
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi bi-linkedin footer-icon"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+            />
+          </svg>
+          Linkedin</a
+        >
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi bi-github footer-icon"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+            />
+          </svg>
+          Github</a
+        >
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

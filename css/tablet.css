@@ -1,0 +1,59 @@
+@media (max-width: 768px) {
+  .nav-bar-item.center {
+    width: 0;
+  }
+
+  .avatar {
+    display: none;
+  }
+
+  #target,
+  #personal-info {
+    padding: 40px 10px 30px 40px;
+    line-height: 1.6;
+  }
+
+  .job-info-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px auto;
+    gap: 20px;
+  }
+
+  .project-name {
+    font-size: 14px;
+  }
+
+  .project-job,
+  .project-description {
+    font-size: 12px;
+  }
+
+  .project-description td {
+    padding: 5px;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  .goal-item,
+  .team-item,
+  .timeline-item,
+  .scope-content,
+  .primary-item {
+    display: block !important;
+  }
+
+  .goal-item i,
+  .team-item i,
+  .primary-item i {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+}
